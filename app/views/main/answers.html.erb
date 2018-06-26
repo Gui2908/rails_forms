@@ -1,0 +1,8 @@
+<!-- <h1>Views folder -> Main folder -> answers.html.erb file</h1> -->
+<h3><%= cookies[:playerName] %> guess the number between 1 and 50! <br>
+  <form action="/answers" method="get">
+      <input type="text" name="userGuess" value="" placeholder="enter number here" >
+      <input type="submit" name="" value="submit your guess number">
+  </form>
+
+You have choosen <%= @userGuess %> <br><br> <%= @msg %></h3>
